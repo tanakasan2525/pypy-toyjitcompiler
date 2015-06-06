@@ -1,5 +1,5 @@
 
-""" Execute ./mytoy-c <filename>
+""" Execute ./mytoy <filename>
 """
 
 import sys

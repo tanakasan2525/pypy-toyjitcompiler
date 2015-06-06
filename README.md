@@ -1,23 +1,38 @@
-## How to compile and run
-Get pypy:
+## How to compile
+1 Get pypy:
 ```bash
 git clone https://github.com/rfk/pypy.git
 ```
 
-Get this repository:
+2 Get this repository:
 ```bash
 git clone https://github.com/tanakasan2525/pypy-toyjitcompiler
 ```
 
-Compile this sample program:
+3 Change directory:
 ```bash
 cd pypy-toyjitcompiler
-PYTHONPATH=../pypy python ../pypy/rpython/bin/rpython targetmytoy.py
 ```
 
-Run this sample program:
+4-1 Compile this sample program as interpreter:
 ```bash
-./targetmytoy-c samples/hello.toy
+make
+```
+
+4-2 Compile this sample program as jit compiler:
+```bash
+make jit
+```
+
+## How to run
+Run the compiled sample program:
+```bash
+./bin/mytoy samples/hello.toy
+```
+
+Run the non-compiled sample program:
+```bash
+PYTHONPATH=../pypy python targetmytoy.py samples/hello.toy
 ```
 
 
