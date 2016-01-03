@@ -7,7 +7,7 @@ PYTHONPATH=$(PYPYPATH)
 BINARY=bin/mytoy
 TARGET=targetmytoy.py
 
-.PHONY: jit run
+.PHONY: jit run test
 
 default:
 	$(PYTHON) $(RPYTHON) --output $(BINARY) $(TARGET)
@@ -17,4 +17,7 @@ jit:
 
 run:
 	PYTHONPATH=$(PYTHONPATH) $(PYTHON) $(TARGET) samples/hello.toy
+
+test:
+	PYTHONPATH=$(PYTHONPATH) py.test
 

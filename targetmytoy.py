@@ -9,7 +9,7 @@ from mytoy.interpreter import interpret
 
 def main(argv):
     if not len(argv) == 2:
-        print __doc__
+        print(__doc__)
         return 1
 
     f = open_file_as_stream(argv[1])

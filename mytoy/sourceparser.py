@@ -144,7 +144,7 @@ class Transformer(object):
             star = star.children[1]
         stmts.append(self.visit_stmt(star.children[0]))
         return stmts
-    
+
     def visit_main(self, node):
         stmts = self._grab_stmts(node.children[0])
         return Block(stmts)

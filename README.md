@@ -6,7 +6,7 @@ git clone https://github.com/rfk/pypy.git
 
 2 Get this repository:
 ```bash
-git clone https://github.com/tanakasan2525/pypy-toyjitcompiler
+git clone https://github.com/tattn/pypy-toyjitcompiler
 ```
 
 3 Change directory:
